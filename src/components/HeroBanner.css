@@ -1,0 +1,26 @@
+/* HeroBanner.css */
+
+.hero-banner {
+    position: relative; /* Makes the section a positioned container for absolute positioning */
+    width: 100%;
+    overflow: hidden; /* Ensures content doesn't overflow */
+}
+
+.banner_image {
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.banner-text {
+    position: absolute; /* Positions it on top of the image */
+    top: 50%; /* Centers vertically */
+    left: 50%; /* Centers horizontally */
+    transform: translate(-50%, -50%); /* Adjusts to center the text exactly */
+    color: white; /* Makes text color white for contrast */
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+    padding: 20px;
+    border-radius: 8px; /* Optional, for a rounded box effect */
+}
